@@ -1,0 +1,15 @@
+# conf.yaml
+version: 2.0
+
+model:
+    name: net
+    framework: pytorch_fx
+
+evaluation:
+    accuracy:
+        metric:
+            topk: 1
+
+tuning:
+  accuracy_criterion:
+    relative: 0.01
